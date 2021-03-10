@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import {Inputs} from "./components/Inputs";
+import {Hover} from "./components/Hover/Hover";
+import {ScrollTodos} from "./components/ScrollTodos/ScrollTodos";
+import {SearchTodos} from "./components/SearchTodos/SearchTodos";
+import "./app.scss";
+import RequestTodos from "./components/RequestTodos/RequestTodos";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export function App() {
+
+    return (
+        <div className="app">
+            <Inputs/>
+            <Hover/>
+            <RequestTodos/>
+            <div className="app__todos">
+                <div className="app__todo">
+                    <ScrollTodos/>
+                </div>
+                <div className="app__todo">
+                    <SearchTodos/>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;

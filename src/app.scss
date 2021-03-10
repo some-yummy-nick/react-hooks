@@ -1,0 +1,10 @@
+.app{
+    &__todos{
+        display: flex;
+    }
+
+    &__todo{
+        width: 50%;
+        padding: 20px;
+    }
+}

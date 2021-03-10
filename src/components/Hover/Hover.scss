@@ -1,0 +1,13 @@
+.hover {
+    width: 300px;
+    height: 300px;
+    transition: background-color 0.3s;
+
+    &.red {
+        background-color: red;
+    }
+
+    &.blue {
+        background-color: blue;
+    }
+}
